@@ -8,7 +8,7 @@ const Leaderbord = () => {
   useEffect(() => {
     const fetchLeaderboard = async () => {
       try {
-        const response = await axios.get("https://backend-lilac-alpha-31.vercel.app/leaderboard");
+        const response = await axios.get("https://leetcode-backend-eta.vercel.app/leaderboard");
         setStudents(response.data);
       } catch (error) {
         console.error("Error fetching leaderboard:", error);
